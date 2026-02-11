@@ -80,20 +80,7 @@
 </main>
 
 <?php
-session_start();
 
-if ($_SESSION['role'] == 'admin') {
-    echo '<button class="btn btn-warning">Edito</button>';
-} else {
-    echo '<p class="text-muted">User</p>';
-}
-?>
-
-<?php
-if ($_SESSION['role'] == 'admin') {
-    echo '<button class="btn btn-warning">Edito</button>';
-}
-?>
 
 
 </body>

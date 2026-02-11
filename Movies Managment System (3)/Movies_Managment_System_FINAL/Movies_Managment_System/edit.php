@@ -1,3 +1,4 @@
+
 <?php 
  /*Creating a session  based on a session identifier, passed via a GET or POST request.
   We will include config.php for connection with database.
