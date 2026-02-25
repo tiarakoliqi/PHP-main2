@@ -1,5 +1,3 @@
-
-
 <?php 
 /*Creating a session  based on a session identifier, passed via a GET or POST request.
   We will include config.php for connection with database.
@@ -140,7 +138,7 @@
                 <!-- If we want to update a user we need to link into editUsers.php -->
                 <td>
                   <td>
-<?php if ($_SESSION['role'] == 'admin') { ?>
+      
     <a href="editUsers.php?id=<?= $user_data['id'];?>">Update</a>
 <?php } ?>
 </td>
