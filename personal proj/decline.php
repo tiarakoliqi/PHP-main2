@@ -1,10 +1,10 @@
 <?php
 
 
-include_once ( 'config.php')
+include_once('config.php');
 
-    $id =$_GET['id'];
-	$sql = "UPDATE `bookings` SET `is_approved` = 'true' WHERE id=:id";
+	$id = $_GET['id'];
+	$sql = "UPDATE `bookings` SET `is_approved` = 'false' WHERE id=:id";
 	$prep = $conn->prepare($sql);
 	$prep->bindParam(':id',$id);
 	$prep->execute();
